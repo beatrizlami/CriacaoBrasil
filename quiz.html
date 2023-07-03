@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A bolsa ideal para você!</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <h1>Descubra a bolsa ideal para você!</h1>
+  <h2>Responda às perguntas abaixo para descobrir qual bolsa da loja @xxx é perfeita para você no momento.</h2>
+  
+  <div id="quiz-container">
+    <div id="image-container">
+    <img src="bolsa bonita.webp" id="imgquiz" alt="imagem do Quiz">
+    </div>
+    <button id="start" class="btn-start">Começar</button>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <div class="question">
+    <h3>Pergunta 1:</h3>
+    <img src="tmnh bolsas.webp" alt="Imagem da Pergunta 1" >
+    <p><strong>Qual é o seu tamanho de bolsa preferido?</strong></p>
+    <label><input type="radio" name="q1" value="pequena">Gosto de bolsas pequenas para ficar chique e levar só o básico!</label><br>
+    <label><input type="radio" name="q1" value="sacola">Prefiro bolsas estilo sacola para levar todos os meus acessórios!</label><br>
+    <label><input type="radio" name="q1" value="mochila">Sou mais das mochilas, por conta da praticidade!</label><br>
+    <label><input type="radio" name="q1" value="media">Bolsas médias e despojadas!</label>
+</div>
+
+    <div class="question">
+    <h3>Pergunta 2:</h3>
+    <img src="bolsa3.jpg" alt="Imagem da Pergunta 2" >
+    <p><strong>O que você costuma carregar em sua bolsa?</strong></p>
+    <label><input type="radio" name="q2" value="muita">Eu costumo levar o mundo todo na minha bolsa, quem sabe do que vou precisar?</label><br>
+    <label><input type="radio" name="q2" value="pouca">Eu levo somente o essencial: um gloss, carteira, chaves e celular. No máximo.</label><br>
+    <label><input type="radio" name="q2" value="medio">Preciso de uma bolsa que caiba pelo menos meu livro & acessórios.</label>
+</div>
+
+<div class="question">
+    <h3>Pergunta 3:</h3>
+    <img src="bolsa5.jpg" alt="Imagem da Pergunta 3" >
+    <p><strong>Qual é a cor predominante nas suas bolsas?</strong></p>
+    <label><input type="radio" name="q3" value="neutro">A maioria das minhas bolsas são pretas ou neutras.</label><br>
+    <label><input type="radio" name="q3" value="claro">Minhas bolsas são majoritariamente claras.</label><br>
+    <label><input type="radio" name="q3" value="colorido">Adoro uma bolsa colorida.</label><br>
+    <label><input type="radio" name="q3" value="estampado">As minhas preferidas são com estampas diferentonas. Elas não tem uma cor em específico.</label>
+</div>
+
+<div class="question">
+    <h3>Pergunta 4:</h3>
+    <img src="bolsa4.jpg" alt="Imagem da Pergunta 4" >
+    <p><strong>Qual é o principal critério que você considera ao escolher uma bolsa para comprar?</strong></p>
+    <label><input type="radio" name="q4" value="beleza">Design e estética</label><br>
+    <label><input type="radio" name="q4" value="qtd">O que vier ta bom, eu gosto é de ter muuuitas bolsas.</label><br>
+    <label><input type="radio" name="q4" value="valor">Preço e custo-benefício</label>
+</div>
+
+  </div>
+
+  <button id="next-question" class="btn-next" hidden>Próxima Pergunta</button>
+  <button id="submit" class="hidden">Enviar</button>
+  
+  
+  <div id="result" class="hidden">
+    <h3>Resultado:</h3>
+    <p id="result-text"></p>
+    <img id="result-image" src="" alt="">
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
